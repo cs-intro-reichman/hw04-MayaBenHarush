@@ -22,9 +22,9 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        String str = "Hello world";
+        String str = " tWo wordS";
         //System.out.println(capVowelsLowRest(str));
-        //System.out.println(camelCase(str));
+        System.out.println(camelCase(str));
         //System.out.println(allIndexOf(str,'l'));
         //int [] arr= allIndexOf(str,'l');
         
@@ -79,7 +79,10 @@ public class StringOps {
 
     public static String camelCase (String string) {
         String temp= "";
-        int index = 0;   
+        int index = 0;  
+        while(string.charAt(index) == ' ' ) { //if the string starts with a space
+            index ++;
+        }
         while(index <string.length()){ 
             if(string.charAt(index) >= 65 && string.charAt(index) <= 90){   //if  uppercase so change
                 temp += (char)(string.charAt(index) + 32);
@@ -100,7 +103,7 @@ public class StringOps {
 
                 }
             }
-            index++;
+            index ++;
             
         }
 

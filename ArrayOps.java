@@ -5,7 +5,7 @@ public class ArrayOps {
         int [] a= {1, 1, 2, 2, 2,3};
         int [] b= {3,2,2,1,1};
         
-        //System.out.println(Arrays.toString(sort(a)));
+        
         //System.out.println(findMissingInt(a));
         //System.out.println(secondMaxValue(a));
         //System.out.println(onlyOnce(a));
@@ -14,7 +14,7 @@ public class ArrayOps {
         //    System.out.println("yes");
         //}
         //System.out.println((containsTheSameElements(a,b)));
-        //System.out.println(Arrays.toString(sort2(b)));
+        
         System.out.println(isSorted(b));
     }
     
