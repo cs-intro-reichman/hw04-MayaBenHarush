@@ -25,7 +25,7 @@ public class ArrayOps {
     public static int findMissingInt (int [] array) {
         int miss = 0 ; //the missing number 
         boolean exist = false;
-        for( int i = 0; i < array.length; i++){
+        for( int i = 0; i <= array.length; i++){
             exist = false;
             for(int j = 0; j < array.length; j++){
                 if( array[j] == i){
